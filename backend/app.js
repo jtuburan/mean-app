@@ -10,7 +10,7 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb://jtuburan3690:X8ooluEXUfrk6zny@cluster0-shard-00-00-msk2y.mongodb.net:27017,cluster0-shard-00-01-msk2y.mongodb.net:27017,cluster0-shard-00-02-msk2y.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true"
+    "mongodb://jtuburan3690:X8ooluEXUfrk6zny@cluster0-shard-00-00-msk2y.mongodb.net:27017,cluster0-shard-00-01-msk2y.mongodb.net:27017,cluster0-shard-00-02-msk2y.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
   )
   .then(() => {
     console.log("Connected to database!");
