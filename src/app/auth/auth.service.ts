@@ -57,6 +57,7 @@ export class AuthService {
   }
 
   autoAuthUser() {
+    // user login timer
     const authInformation = this.getAuthData();
     if(!authInformation){
       return;
@@ -72,6 +73,7 @@ export class AuthService {
   }
 
   logout() {
+    // user logout
     this.token = null;
     this.isAuthenticated = false;
     this.authStatusListener.next(false);
@@ -80,6 +82,7 @@ export class AuthService {
     this.router.navigate(['/']);
   }
 
+  // user authentication timer
   private setAuthTimer(duration: number) {
     console.log("setting timer" + duration);
     this.tokenTimer = setTimeout(() => {
